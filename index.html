@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pop-Up</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet"> 
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+
+    <div class="main__button">
+            <div class="waveWrapper waveAnimation">
+                    <div class="waveWrapperInner bgTop">
+                      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                    </div>
+                    <div class="waveWrapperInner bgMiddle">
+                      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                    </div>
+                    <div class="waveWrapperInner bgBottom">
+                      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                    </div>
+                  </div>
+        <button data-modal-target="#modal">Shazam</button>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal__header">
+            <button data-close-button class="modal__close-button"><img class="img-close" src="./img/icon-popup-close.svg" alt="close"></button data-close-button>
+            <div class="modal__warning-img">
+                <img class ="img-warning" src="./img/icon-warning_notify-red.svg" alt="warning">
+            </div> 
+            <div class="modal__title">
+                Are you sure you want to uninstall the Zhazam app
+            </div>
+        </div>
+        <div class="modal__body">
+            <button data-close-button class="cancel">Cancel</button>
+            <button data-uninstall-button class="uninstall">Uninstall</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
