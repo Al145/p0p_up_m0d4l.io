@@ -21,7 +21,10 @@ uninstallModalButton.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.modal');
         closeModal(modal);
-        alert('Done');
+        swal({
+            title: "Done!",
+            icon: "success",
+          });
     })
 });
 
