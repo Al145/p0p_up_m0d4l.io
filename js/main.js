@@ -23,6 +23,7 @@ uninstallModalButton.forEach(button => {
         closeModal(modal);
         swal({
             title: "Done!",
+            text: "You removed the Shazam app!",
             icon: "success",
           });
     })
